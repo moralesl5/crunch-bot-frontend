@@ -44,7 +44,7 @@ class App extends Component {
         console.log(responseJson)
         this.setState((prevState) =>{
           return{
-            results: responseJson
+            results: responseJson.reverse()
           }
         })
       })
